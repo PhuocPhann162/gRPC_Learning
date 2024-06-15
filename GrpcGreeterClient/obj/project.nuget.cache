@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "CXCKr16pUDjbX+hpdkLWOmSX+0hy0PjWLoVhFrGujAN6h627Yd84l/rUkfaf6uKniXrbth9O3MzRIxXoxjJyHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\source\\repos\\ASPNET\\rGPC\\GrpcGreeter\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\google.protobuf\\3.27.1\\google.protobuf.3.27.1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\grpc.core.api\\2.63.0\\grpc.core.api.2.63.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\grpc.net.client\\2.63.0\\grpc.net.client.2.63.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\grpc.net.common\\2.63.0\\grpc.net.common.2.63.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\grpc.tools\\2.65.0-pre1\\grpc.tools.2.65.0-pre1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

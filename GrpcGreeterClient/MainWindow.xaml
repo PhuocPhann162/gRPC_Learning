@@ -1,0 +1,15 @@
+﻿<Window x:Class="GrpcGreeterClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GrpcGreeterClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="btnSendMessages" Content="Send Messages" Width="100" Height="40" Click="btnSendMessages_Click" />
+            <TextBox Name="txtMessageReceive" Width="200" />
+        </StackPanel>
+    </Grid>
+</Window>
