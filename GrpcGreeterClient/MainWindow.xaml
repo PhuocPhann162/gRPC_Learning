@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Name="btnSendMessages" Content="Send Messages" Width="100" Height="40" Click="btnSendMessages_Click" />
-            <TextBox Name="txtMessageReceive" Width="200" />
-        </StackPanel>
+        <Button Name="btnSendMessages" Content="Send Message" Click="btnSendMessages_Click" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
+        <TextBlock Name="txtMessageReceive" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,70,0,0"/>
+        <Button Name="btnListPersons" Content="List Persons" Click="btnListPersons_Click" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,130,0,0"/>
+        <ListBox Name="lstPersons" Width="300" Height="150" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,200,0,0"/>
     </Grid>
 </Window>

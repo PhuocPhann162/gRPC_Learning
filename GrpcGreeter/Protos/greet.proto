@@ -15,7 +15,6 @@ service Greeter {
 // The request message containing the user's name.
 message HelloRequest {
   string name = 1;
-  string age = 2;
 }
 
 // The response message containing the greetings.
@@ -32,8 +31,8 @@ message PersonList {
 }
 
 message Person {
-	int32 id = 1;
-	string name = 2;
+	string name = 1;
+	int32 id = 2;
 	string email = 3;
 
 	enum PhoneType {

@@ -24,26 +24,25 @@ namespace GrpcGreeter {
     static GreetReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IikKDEhlbGxvUmVxdWVzdBIM",
-            "CgRuYW1lGAEgASgJEgsKA2FnZRgCIAEoCSIdCgpIZWxsb1JlcGx5Eg8KB21l",
-            "c3NhZ2UYASABKAkiBwoFRW1wdHkiLAoKUGVyc29uTGlzdBIeCgdwZXJzb25z",
-            "GAEgAygLMg0uZ3JlZXQuUGVyc29uIs8BCgZQZXJzb24SCgoCaWQYASABKAUS",
-            "DAoEbmFtZRgCIAEoCRINCgVlbWFpbBgDIAEoCRIpCgZwaG9uZXMYBCADKAsy",
-            "GS5ncmVldC5QZXJzb24uUGhvbmVOdW1iZXIaRAoLUGhvbmVOdW1iZXISDgoG",
-            "bnVtYmVyGAEgASgJEiUKBHR5cGUYAiABKA4yFy5ncmVldC5QZXJzb24uUGhv",
-            "bmVUeXBlIisKCVBob25lVHlwZRIKCgZNT0JJTEUQABIICgRIT01FEAESCAoE",
-            "V09SSxACMm0KB0dyZWV0ZXISMgoIU2F5SGVsbG8SEy5ncmVldC5IZWxsb1Jl",
-            "cXVlc3QaES5ncmVldC5IZWxsb1JlcGx5Ei4KC0xpc3RQZXJzb25zEgwuZ3Jl",
-            "ZXQuRW1wdHkaES5ncmVldC5QZXJzb25MaXN0Qg6qAgtHcnBjR3JlZXRlcmIG",
-            "cHJvdG8z"));
+            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IhwKDEhlbGxvUmVxdWVzdBIM",
+            "CgRuYW1lGAEgASgJIh0KCkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIH",
+            "CgVFbXB0eSIsCgpQZXJzb25MaXN0Eh4KB3BlcnNvbnMYASADKAsyDS5ncmVl",
+            "dC5QZXJzb24izwEKBlBlcnNvbhIMCgRuYW1lGAEgASgJEgoKAmlkGAIgASgF",
+            "Eg0KBWVtYWlsGAMgASgJEikKBnBob25lcxgEIAMoCzIZLmdyZWV0LlBlcnNv",
+            "bi5QaG9uZU51bWJlchpECgtQaG9uZU51bWJlchIOCgZudW1iZXIYASABKAkS",
+            "JQoEdHlwZRgCIAEoDjIXLmdyZWV0LlBlcnNvbi5QaG9uZVR5cGUiKwoJUGhv",
+            "bmVUeXBlEgoKBk1PQklMRRAAEggKBEhPTUUQARIICgRXT1JLEAIybQoHR3Jl",
+            "ZXRlchIyCghTYXlIZWxsbxITLmdyZWV0LkhlbGxvUmVxdWVzdBoRLmdyZWV0",
+            "LkhlbGxvUmVwbHkSLgoLTGlzdFBlcnNvbnMSDC5ncmVldC5FbXB0eRoRLmdy",
+            "ZWV0LlBlcnNvbkxpc3RCDqoCC0dycGNHcmVldGVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.HelloRequest), global::GrpcGreeter.HelloRequest.Parser, new[]{ "Name", "Age" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.HelloRequest), global::GrpcGreeter.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.HelloReply), global::GrpcGreeter.HelloReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.Empty), global::GrpcGreeter.Empty.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.PersonList), global::GrpcGreeter.PersonList.Parser, new[]{ "Persons" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.Person), global::GrpcGreeter.Person.Parser, new[]{ "Id", "Name", "Email", "Phones" }, null, new[]{ typeof(global::GrpcGreeter.Person.Types.PhoneType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.Person.Types.PhoneNumber), global::GrpcGreeter.Person.Types.PhoneNumber.Parser, new[]{ "Number", "Type" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.Person), global::GrpcGreeter.Person.Parser, new[]{ "Name", "Id", "Email", "Phones" }, null, new[]{ typeof(global::GrpcGreeter.Person.Types.PhoneType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.Person.Types.PhoneNumber), global::GrpcGreeter.Person.Types.PhoneNumber.Parser, new[]{ "Number", "Type" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -53,7 +52,6 @@ namespace GrpcGreeter {
   /// <summary>
   /// The request message containing the user's name.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HelloRequest : pb::IMessage<HelloRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -89,7 +87,6 @@ namespace GrpcGreeter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HelloRequest(HelloRequest other) : this() {
       name_ = other.name_;
-      age_ = other.age_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -111,18 +108,6 @@ namespace GrpcGreeter {
       }
     }
 
-    /// <summary>Field number for the "age" field.</summary>
-    public const int AgeFieldNumber = 2;
-    private string age_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Age {
-      get { return age_; }
-      set {
-        age_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -139,7 +124,6 @@ namespace GrpcGreeter {
         return true;
       }
       if (Name != other.Name) return false;
-      if (Age != other.Age) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -148,7 +132,6 @@ namespace GrpcGreeter {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Age.Length != 0) hash ^= Age.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -171,10 +154,6 @@ namespace GrpcGreeter {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
-      if (Age.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Age);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -189,10 +168,6 @@ namespace GrpcGreeter {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
-      if (Age.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Age);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -205,9 +180,6 @@ namespace GrpcGreeter {
       int size = 0;
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Age.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Age);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -223,9 +195,6 @@ namespace GrpcGreeter {
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
-      }
-      if (other.Age.Length != 0) {
-        Age = other.Age;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -244,10 +213,6 @@ namespace GrpcGreeter {
             break;
           case 10: {
             Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            Age = input.ReadString();
             break;
           }
         }
@@ -269,10 +234,6 @@ namespace GrpcGreeter {
             Name = input.ReadString();
             break;
           }
-          case 18: {
-            Age = input.ReadString();
-            break;
-          }
         }
       }
     }
@@ -283,7 +244,6 @@ namespace GrpcGreeter {
   /// <summary>
   /// The response message containing the greetings.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HelloReply : pb::IMessage<HelloReply>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -476,7 +436,6 @@ namespace GrpcGreeter {
   /// <summary>
   /// An empty message.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Empty : pb::IMessage<Empty>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -632,7 +591,6 @@ namespace GrpcGreeter {
   /// <summary>
   /// The response message containing the list of persons.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PersonList : pb::IMessage<PersonList>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -811,7 +769,6 @@ namespace GrpcGreeter {
 
   }
 
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Person : pb::IMessage<Person>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -846,8 +803,8 @@ namespace GrpcGreeter {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Person(Person other) : this() {
-      id_ = other.id_;
       name_ = other.name_;
+      id_ = other.id_;
       email_ = other.email_;
       phones_ = other.phones_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -859,20 +816,8 @@ namespace GrpcGreeter {
       return new Person(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
     /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
+    public const int NameFieldNumber = 1;
     private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -880,6 +825,18 @@ namespace GrpcGreeter {
       get { return name_; }
       set {
         name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 2;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
       }
     }
 
@@ -921,8 +878,8 @@ namespace GrpcGreeter {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
       if (Name != other.Name) return false;
+      if (Id != other.Id) return false;
       if (Email != other.Email) return false;
       if(!phones_.Equals(other.phones_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -932,8 +889,8 @@ namespace GrpcGreeter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (Email.Length != 0) hash ^= Email.GetHashCode();
       hash ^= phones_.GetHashCode();
       if (_unknownFields != null) {
@@ -954,13 +911,13 @@ namespace GrpcGreeter {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
       if (Name.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(Name);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Id);
       }
       if (Email.Length != 0) {
         output.WriteRawTag(26);
@@ -977,13 +934,13 @@ namespace GrpcGreeter {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
       if (Name.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(Name);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Id);
       }
       if (Email.Length != 0) {
         output.WriteRawTag(26);
@@ -1000,11 +957,11 @@ namespace GrpcGreeter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
       if (Email.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Email);
@@ -1022,11 +979,11 @@ namespace GrpcGreeter {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
       }
       if (other.Email.Length != 0) {
         Email = other.Email;
@@ -1047,12 +1004,12 @@ namespace GrpcGreeter {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            Name = input.ReadString();
             break;
           }
-          case 18: {
-            Name = input.ReadString();
+          case 16: {
+            Id = input.ReadInt32();
             break;
           }
           case 26: {
@@ -1078,12 +1035,12 @@ namespace GrpcGreeter {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            Name = input.ReadString();
             break;
           }
-          case 18: {
-            Name = input.ReadString();
+          case 16: {
+            Id = input.ReadInt32();
             break;
           }
           case 26: {
@@ -1110,7 +1067,6 @@ namespace GrpcGreeter {
         [pbr::OriginalName("WORK")] Work = 2,
       }
 
-      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PhoneNumber : pb::IMessage<PhoneNumber>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage

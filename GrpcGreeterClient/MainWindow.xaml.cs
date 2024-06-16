@@ -1,6 +1,8 @@
-﻿using Grpc.Net.Client;
+﻿using Google.Protobuf.WellKnownTypes;
+using Grpc.Net.Client;
 using System.Text;
 using System.Windows;
+using GrpcGreeterClient;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -33,6 +35,15 @@ namespace GrpcGreeterClient
 
             txtMessageReceive.Text = "Greeting: " + reply.Message;
 
+        }
+
+        private async void btnListPersons_Click(object sender, RoutedEventArgs e)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7201");
+            var client = new Greeter.GreeterClient(channel);
+            var reply = await client.ListPersonsAsync(new Empty { });
+
+            lstPersons.ItemsSource = reply.Persons;
         }
     }
 }
